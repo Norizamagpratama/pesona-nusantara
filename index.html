@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Wonderful Bengkulu | Pesona Nusantara</title>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* HERO: latar baru penuh layar, latar lama dihapus */
+        header.masthead {
+            background: url('img/bg-hero.jpg') center center / cover no-repeat !important;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 7rem;
+            padding-bottom: 4rem;
+        }
+        .hero-logo {
+            width: min(680px, 92%);
+            filter: drop-shadow(0 0 10px rgba(255,255,255,.95)) drop-shadow(0 0 24px rgba(255,255,255,.8));
+        }
+        header.masthead .lead {
+            color: #06394a;
+            font-weight: 600;
+            text-shadow: 0 1px 6px rgba(255,255,255,.9);
+        }
+
+        .portfolio-item img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+        .team-member img { object-fit: cover; }
+        .navbar-brand { font-weight: 700; color: #fff; text-transform: uppercase; }
+        .close-modal { cursor: pointer; }
+        .portfolio-link { cursor: pointer; display: block; }
+        .portfolio-link img { transition: opacity .3s; }
+        .portfolio-link:hover img { opacity: .85; }
+    </style>
+</head>
+<body id="page-top">
+
+    <!-- NAVIGASI -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><i class="fas fa-compass"></i> Pesona Nusantara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinasi">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kuliner">Kuliner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="masthead">
+        <div class="container">
+            <img src="img/logo-bengkulu-2026-transparan.png" alt="Wonderful Bengkulu 2026" class="hero-logo mb-3">
+            <p class="lead mb-4">Bumi Rafflesia: pantai, sejarah, dan alam indah yang menunggu untuk kamu jelajahi.</p>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#destinasi">Jelajahi Destinasi</a>
+        </div>
+    </header>
+
+    <!-- TENTANG -->
+    <section class="page-section" id="tentang">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Tentang Bengkulu</h2>
+                <h3 class="section-subheading text-muted">Bengkulu berada di pesisir barat Pulau Sumatra. Provinsi ini dikenal sebagai Bumi Rafflesia, memiliki garis pantai yang panjang, peninggalan sejarah yang kaya, dan alam hijau yang masih terjaga.</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-spa fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="my-3">Bumi Rafflesia</h4>
+                    <p class="text-muted">Rumah bagi bunga langka Rafflesia arnoldii, bunga terbesar di dunia.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-water fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="my-3">Pantai Memukau</h4>
+                    <p class="text-muted">Pantai berpasir dan pulau kecil dengan perairan yang jernih.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-landmark fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="my-3">Jejak Sejarah</h4>
+                    <p class="text-muted">Benteng dan rumah bersejarah yang menyimpan kisah perjuangan bangsa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINASI -->
+    <section class="page-section bg-light" id="destinasi">
+        <div class="container" id="portfolio">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Destinasi Unggulan</h2>
+                <h3 class="section-subheading text-muted">Klik foto untuk melihat keterangan lengkap.</h3>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modal1">
+                            <img class="img-fluid" src="img/pantai-panjang.jpg" alt="Pantai Panjang" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Pantai Panjang</div>
+                            <div class="portfolio-caption-subheading text-muted">Wisata Pantai</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modal2">
+                            <img class="img-fluid" src="img/benteng-marlborough.jpg" alt="Benteng Marlborough" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Benteng Marlborough</div>
+                            <div class="portfolio-caption-subheading text-muted">Wisata Sejarah</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modal3">
+                            <img class="img-fluid" src="img/rumah-bung-karno.jpg" alt="Rumah Pengasingan Bung Karno" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Rumah Pengasingan Bung Karno</div>
+                            <div class="portfolio-caption-subheading text-muted">Wisata Sejarah</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modal4">
+                            <img class="img-fluid" src="img/pulau-tikus.jpg" alt="Pulau Tikus" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Pulau Tikus</div>
+                            <div class="portfolio-caption-subheading text-muted">Wisata Bahari</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modal5">
+                            <img class="img-fluid" src="img/danau-dendam.jpg" alt="Danau Dendam Tak Sudah" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Danau Dendam Tak Sudah</div>
+                            <div class="portfolio-caption-subheading text-muted">Wisata Alam</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#modal6">
+                            <img class="img-fluid" src="img/rafflesia.jpg" alt="Bunga Rafflesia" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Bunga Rafflesia</div>
+                            <div class="portfolio-caption-subheading text-muted">Wisata Alam</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KULINER -->
+    <section class="page-section" id="kuliner">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Kuliner Khas</h2>
+                <h3 class="section-subheading text-muted">Cita rasa khas Bumi Rafflesia.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/pendap.jpg" alt="Pendap" />
+                        <h4>Pendap</h4>
+                        <p class="text-muted">Olahan ikan berbumbu kelapa yang dibungkus daun lalu dimasak.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/bagar-hiu.jpg" alt="Bagar Hiu" />
+                        <h4>Bagar Hiu</h4>
+                        <p class="text-muted">Masakan ikan hiu dengan bumbu rempah khas Bengkulu.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/lempuk-durian.jpg" alt="Lempuk Durian" />
+                        <h4>Lempuk Durian</h4>
+                        <p class="text-muted">Dodol lembut berbahan durian, oleh-oleh favorit wisatawan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="page-section bg-light" id="kontak">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Hubungi Kami</h2>
+                <h3 class="section-subheading text-muted">Kirim pertanyaan atau pesanmu di sini.</h3>
+            </div>
+            <form id="contactForm">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group"><input class="form-control" type="text" placeholder="Nama *" required /></div>
+                        <div class="form-group mb-md-0"><input class="form-control" type="email" placeholder="Email *" required /></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0"><textarea class="form-control" placeholder="Pesan *" required></textarea></div>
+                    </div>
+                </div>
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" type="submit">Kirim Pesan</button></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <div class="fw-bold">Wonderful Bengkulu | Pesona Nusantara</div>
+            <small>&copy; 2026 Tugas Pemrograman Web - Norizam Ag Pratama - 25010074p</small>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: Pantai Panjang -->
+    <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-xmark fa-2x"></i></div>
+            <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="modal-body">
+                <h2 class="text-uppercase">Pantai Panjang</h2>
+                <p class="item-intro text-muted">Wisata Pantai di Bengkulu</p>
+                <img class="img-fluid d-block mx-auto" src="img/pantai-panjang.jpg" alt="Pantai Panjang" />
+                <p>Pantai berpasir di tepi Kota Bengkulu yang membentang beberapa kilometer, cocok untuk menikmati matahari terbenam.</p>
+                <ul class="list-inline"><li><strong>Kategori:</strong> Wisata Pantai</li><li><strong>Lokasi:</strong> Bengkulu</li></ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i> Tutup</button>
+            </div></div></div></div>
+        </div></div>
+    </div>
+
+    <!-- MODAL 2: Benteng Marlborough -->
+    <div class="portfolio-modal modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-xmark fa-2x"></i></div>
+            <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="modal-body">
+                <h2 class="text-uppercase">Benteng Marlborough</h2>
+                <p class="item-intro text-muted">Wisata Sejarah di Bengkulu</p>
+                <img class="img-fluid d-block mx-auto" src="img/benteng-marlborough.jpg" alt="Benteng Marlborough" />
+                <p>Benteng peninggalan Inggris dari awal abad ke-18 yang kini menjadi destinasi wisata sejarah.</p>
+                <ul class="list-inline"><li><strong>Kategori:</strong> Wisata Sejarah</li><li><strong>Lokasi:</strong> Bengkulu</li></ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i> Tutup</button>
+            </div></div></div></div>
+        </div></div>
+    </div>
+
+    <!-- MODAL 3: Rumah Pengasingan Bung Karno -->
+    <div class="portfolio-modal modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-xmark fa-2x"></i></div>
+            <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="modal-body">
+                <h2 class="text-uppercase">Rumah Pengasingan Bung Karno</h2>
+                <p class="item-intro text-muted">Wisata Sejarah di Bengkulu</p>
+                <img class="img-fluid d-block mx-auto" src="img/rumah-bung-karno.jpg" alt="Rumah Pengasingan Bung Karno" />
+                <p>Rumah tempat Bung Karno diasingkan pada masa penjajahan, kini menjadi museum bersejarah.</p>
+                <ul class="list-inline"><li><strong>Kategori:</strong> Wisata Sejarah</li><li><strong>Lokasi:</strong> Bengkulu</li></ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i> Tutup</button>
+            </div></div></div></div>
+        </div></div>
+    </div>
+
+    <!-- MODAL 4: Pulau Tikus -->
+    <div class="portfolio-modal modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-xmark fa-2x"></i></div>
+            <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="modal-body">
+                <h2 class="text-uppercase">Pulau Tikus</h2>
+                <p class="item-intro text-muted">Wisata Bahari di Bengkulu</p>
+                <img class="img-fluid d-block mx-auto" src="img/pulau-tikus.jpg" alt="Pulau Tikus" />
+                <p>Pulau kecil berpasir putih dengan air jernih, populer untuk snorkeling dan bersantai.</p>
+                <ul class="list-inline"><li><strong>Kategori:</strong> Wisata Bahari</li><li><strong>Lokasi:</strong> Bengkulu</li></ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i> Tutup</button>
+            </div></div></div></div>
+        </div></div>
+    </div>
+
+    <!-- MODAL 5: Danau Dendam Tak Sudah -->
+    <div class="portfolio-modal modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-xmark fa-2x"></i></div>
+            <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="modal-body">
+                <h2 class="text-uppercase">Danau Dendam Tak Sudah</h2>
+                <p class="item-intro text-muted">Wisata Alam di Bengkulu</p>
+                <img class="img-fluid d-block mx-auto" src="img/danau-dendam.jpg" alt="Danau Dendam Tak Sudah" />
+                <p>Danau yang dikelilingi perbukitan hijau dengan suasana tenang dan udara yang sejuk.</p>
+                <ul class="list-inline"><li><strong>Kategori:</strong> Wisata Alam</li><li><strong>Lokasi:</strong> Bengkulu</li></ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i> Tutup</button>
+            </div></div></div></div>
+        </div></div>
+    </div>
+
+    <!-- MODAL 6: Bunga Rafflesia -->
+    <div class="portfolio-modal modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog"><div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-xmark fa-2x"></i></div>
+            <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="modal-body">
+                <h2 class="text-uppercase">Bunga Rafflesia</h2>
+                <p class="item-intro text-muted">Wisata Alam di Bengkulu</p>
+                <img class="img-fluid d-block mx-auto" src="img/rafflesia.jpg" alt="Bunga Rafflesia" />
+                <p>Ikon Bengkulu. Bunga langka raksasa ini dapat disaksikan saat mekar di hutan sekitar Bengkulu.</p>
+                <ul class="list-inline"><li><strong>Kategori:</strong> Wisata Alam</li><li><strong>Lokasi:</strong> Bengkulu</li></ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button"><i class="fas fa-xmark me-1"></i> Tutup</button>
+            </div></div></div></div>
+        </div></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesanmu sudah terkirim (demo).');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
